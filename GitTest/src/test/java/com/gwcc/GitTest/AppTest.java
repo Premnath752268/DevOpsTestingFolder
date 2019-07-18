@@ -1,38 +1,34 @@
 package com.gwcc.GitTest;
 
-import junit.framework.Test;
+/*import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import junit.framework.TestSuite;*/
+import org.testng.annotations.*;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	@Test()
+	public void ThirdMethod()
+	{
+		System.out.println("****** Hey , I am from  Third  Method ******");
+	}
+    
+	@Test()
+	public void SecondMethod()
+	{
+		System.out.println("****** I am from  Second Method ******");
+	}
+	
+	@Test()
+	public void FirstMethod()
+	{
+		System.out.println("****** Am from  First Method ******");
+	}
+	
+	
+	
+	
 }
